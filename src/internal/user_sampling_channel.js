@@ -64,12 +64,12 @@ analytics.internal.UserSamplingChannel.prototype.send =
   // from the second component in the id giving us a range of 0 - 65535. The
   // sample rate we test against is scaled up to be proportionate with this
   // range.
-  var idPart = parseInt(clientId.split('-')[1], 16);
-  var base16SampleRate = (this.getSampleRate_(hitType, parameters) *
-      analytics.internal.UserSamplingChannel.SAMPLE_RATE_SCALE_);
-  return idPart < base16SampleRate ?
+  // var idPart = parseInt(clientId.split('-')[1], 16);
+  // var base16SampleRate = (this.getSampleRate_(hitType, parameters) *
+  //     analytics.internal.UserSamplingChannel.SAMPLE_RATE_SCALE_);
+  // return idPart < base16SampleRate ?
       this.delegate_.send(hitType, parameters) :
-      goog.async.Deferred.succeed(analytics.Results.SAMPLED_OUT);
+      // goog.async.Deferred.succeed(analytics.Results.SAMPLED_OUT);
 };
 
 

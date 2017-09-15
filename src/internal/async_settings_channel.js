@@ -51,7 +51,7 @@ analytics.internal.AsyncSettingsChannel = function(settings, delegate) {
 /** @override */
 analytics.internal.AsyncSettingsChannel.prototype.send =
     function(hitType, parameters) {
-  parameters.set(
-      analytics.internal.Parameters.CLIENT_ID, this.settings_.getUserId());
+  // parameters.set(
+  //     analytics.internal.Parameters.CLIENT_ID, this.settings_.getUserId());
   return this.delegate_.send(hitType, parameters);
 };
