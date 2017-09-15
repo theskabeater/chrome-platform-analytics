@@ -68,7 +68,7 @@ analytics.internal.UserSamplingChannel.prototype.send =
   // var base16SampleRate = (this.getSampleRate_(hitType, parameters) *
   //     analytics.internal.UserSamplingChannel.SAMPLE_RATE_SCALE_);
   // return idPart < base16SampleRate ?
-      this.delegate_.send(hitType, parameters) :
+      this.delegate_.send(hitType, parameters);
       // goog.async.Deferred.succeed(analytics.Results.SAMPLED_OUT);
 };
 
