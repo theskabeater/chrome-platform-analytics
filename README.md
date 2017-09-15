@@ -2,7 +2,7 @@ Chrome Platform Analytics is a Javascript library supporting the use of Google A
 
 Please see [the wiki](https://github.com/GoogleChrome/chrome-platform-analytics/wiki) for more information.
 ##
-#### Javascript Bundle Compilation Isntructions
+#### Javascript Bundle Compilation Instructions
 
 1. Install the closure compiler: https://github.com/google/closure-compiler
 2. Make sure node.js is installed and run `npm i google-closure-library` from the command line
